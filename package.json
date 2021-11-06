@@ -1,6 +1,6 @@
 {
     "main": "lib/index.js",
-    "name": "lix-utils",
+    "name": "@travel/utils",
     "title": "js工具库",
     "version": "1.0.4",
     "description": "js工具库",
@@ -12,7 +12,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/yaolx/lix-utils.git"
+        "url": "https://github.com/yaolx/travel-utils.git"
     },
     "devDependencies": {
         "@babel/cli": "^7.2.3",
