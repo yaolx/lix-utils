@@ -3,7 +3,7 @@
 - npm version patch
   先执行 npm run preversion，ts 检查、jest 单元测试通过后，再升级修订版本号
 - npm publish
-  先执行 npm run prePublish，再发布包到 npm
+  先执行 npm run prepare，再发布包到 npm
 
 ## URLQueryParserUtils
 
