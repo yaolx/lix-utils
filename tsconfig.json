@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "strict": true,
+    "declaration": true,
+    "outDir": "lib",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "paths": {
+      "src/*": ["src/*"]
+    },
+    "esModuleInterop": true
+  }
+}

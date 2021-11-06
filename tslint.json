@@ -1,0 +1,22 @@
+{
+  "extends": "tslint-config-alloy",
+  "rules": {
+    "linebreak-style": [false, "error"],
+    "indent": [true, "spaces", 2],
+    "semicolon": [true, "never"],
+    "no-invalid-template-strings": false,
+    "ordered-imports": false,
+    "no-implicit-dependencies": [
+      true,
+      ["src", "ramda"]
+    ]
+  },
+  "rulesDirectory": [
+    "node_modules/tslint-eslint-rules/dist/rules"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "**/node_modules/**"
+    ]
+  }
+}

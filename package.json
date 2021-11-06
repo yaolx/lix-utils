@@ -1,0 +1,73 @@
+{
+    "main": "lib/index.js",
+    "name": "lix-utils",
+    "title": "js工具库",
+    "version": "1.0.0",
+    "description": "js工具库",
+    "author": "yaolx",
+    "license": "ISC",
+    "files": [
+        "lib",
+        "dist"
+    ],
+    "devDependencies": {
+        "@babel/cli": "^7.2.3",
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-transform-runtime": "^7.2.0",
+        "@babel/polyfill": "^7.2.5",
+        "@babel/preset-env": "^7.3.1",
+        "@babel/preset-stage-0": "^7.0.0",
+        "@babel/preset-typescript": "^7.1.0",
+        "@babel/runtime": "^7.3.1",
+        "@types/html-entities": "^1.2.16",
+        "@types/jest": "^23.3.13",
+        "@types/js-base64": "^2.3.1",
+        "@types/lodash": "^4.14.120",
+        "@types/node": "^14.14.31",
+        "@types/ramda": "^0.26.9",
+        "@types/url-parse": "^1.4.3",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-jest": "^24.0.0",
+        "babel-loader": "^8.0.5",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-stage-0": "^6.24.1",
+        "eslint": "^5.12.1",
+        "jest": "^23.6.0",
+        "js-beautify": "^1.8.9",
+        "pre-commit": "^1.2.2",
+        "ramda": "^0.26.1",
+        "shx": "^0.3.2",
+        "ts-jest": "^23.10.5",
+        "ts-loader": "^5.3.3",
+        "tslint": "^5.12.1",
+        "tslint-config-alloy": "^0.2.1",
+        "tslint-eslint-rules": "^5.4.0",
+        "typescript": "^3.3.1",
+        "webpack": "^4.29.0",
+        "webpack-cli": "^3.2.1"
+    },
+    "pre-commit": [
+        "lint",
+        "test"
+    ],
+    "scripts": {
+        "lint": "tslint --project tsconfig.json --config tslint.json",
+        "build": "webpack",
+        "test": "jest",
+        "babel": "babel src --out-dir lib --extensions \".ts\"",
+        "dts": "tsc -p tsconfig.dts.json",
+        "preversion": "npm run lint && npm run test",
+        "prepublish": "npm run babel && npm run dts"
+    },
+    "dependencies": {
+        "detect-browser": "^5.2.0",
+        "html-entities": "^1.2.1",
+        "js-base64": "^2.5.1",
+        "loglevel": "^1.6.8",
+        "url-parse": "^1.4.4"
+    },
+    "peerDependencies": {
+        "lodash": "^4.0.0"
+    }
+}

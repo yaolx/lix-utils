@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "rootDir": "./src",
+    "strict": true,
+    "declaration": true,
+    "outDir": "lib/",
+    "emitDeclarationOnly": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
+    "paths": {
+      "src/*": ["/*"]
+    },
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
