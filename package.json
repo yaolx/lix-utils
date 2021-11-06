@@ -58,7 +58,7 @@
         "babel": "babel src --out-dir lib --extensions \".ts\"",
         "dts": "tsc -p tsconfig.dts.json",
         "preversion": "npm run lint && npm run test",
-        "prepublish": "npm run babel && npm run dts"
+        "prepare": "npm version patch && npm run babel && npm run dts"
     },
     "dependencies": {
         "detect-browser": "^5.2.0",
