@@ -2,7 +2,7 @@
     "main": "lib/index.js",
     "name": "lix-utils",
     "title": "js工具库",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "js工具库",
     "author": "yaolx",
     "license": "ISC",
